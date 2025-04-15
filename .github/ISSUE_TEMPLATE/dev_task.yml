@@ -6,7 +6,9 @@ body:
     id: title
     attributes:
       label: Summary
-      description: One-sentence summary of the issue or feature.
+      description: |
+        One-sentence summary of the issue or feature.
+        **Reminder**: Please include the Linear issue ID (e.g. PRO-42) in this section. This ensures commits and pull requests are properly linked to this task.
     validations:
       required: true
   - type: dropdown
