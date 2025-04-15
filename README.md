@@ -1,2 +1,2 @@
 # .github
-org centralized template
+org centralized templates
