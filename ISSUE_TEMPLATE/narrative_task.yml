@@ -1,0 +1,45 @@
+name: Narrative Task
+description: Create or revise story-related content
+labels: ["type:narrative"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: One-sentence summary of the task.
+    validations:
+      required: true
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Content Type
+      options:
+        - Quest Dialog
+        - Lore Entry
+        - Item Description
+        - Cutscene / Scripted Event
+        - NPC Backstory
+        - Environmental Flavor
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description or Prompt
+      description: What is the scene, character, or story this task supports?
+    validations:
+      required: true
+  - type: textarea
+    id: tone
+    attributes:
+      label: Desired Tone / References
+      description: Optional – Include tone, inspirations, or voice references.
+    validations:
+      required: false
+  - type: textarea
+    id: status
+    attributes:
+      label: Status / Context
+      description: Note whether this is new work or a revision, and any team feedback to consider.
+    validations:
+      required: false

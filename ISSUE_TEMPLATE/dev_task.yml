@@ -1,0 +1,45 @@
+name: Dev Task
+description: Technical implementation or feature request for the dev team
+labels: ["type:dev"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: One-sentence summary of the issue or feature.
+    validations:
+      required: true
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Affected Repository
+      description: Where will this work be done?
+      options:
+        - rekember-server
+        - rekember-client
+        - rekember-deploy
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the problem, background, or related systems.
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals / Acceptance Criteria
+      description: Clearly outline what "done" looks like.
+      placeholder: |
+        - Should connect with X system
+        - Error handling for Y
+        - Integration with Z config
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Related files, links, diagrams, etc.
