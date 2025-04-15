@@ -6,7 +6,9 @@ body:
     id: title
     attributes:
       label: Title
-      description: One-sentence summary of the task.
+      description: |
+        One-sentence summary of the task.
+        **Reminder**: Please include the Linear issue ID (e.g. PRO-42) in this section. This ensures commits and pull requests are properly linked to this task.
     validations:
       required: true
   - type: dropdown
